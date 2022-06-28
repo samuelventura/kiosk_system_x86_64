@@ -1,14 +1,12 @@
 import QtQuick 2.0
-import QtWebKit 3.0
+import QtQuick.Window 2.0
+import QtWebEngine 1.0
 
-Rectangle {
-    id: content
-    width: 800
-    height: 600
-    color: "black"
-
-    WebView {
-        id: webView
+Window {
+    width: 1024
+    height: 750
+    visible: true
+    WebEngineView {
         anchors.fill: parent
         url: "https://google.com"
     }
