@@ -26,7 +26,7 @@ defmodule Example.Application do
     webengine_opts = Application.get_all_env(:webengine_kiosk)
 
     [
-      {WebengineKiosk, {webengine_opts, name: Display}}
+      #{WebengineKiosk, {webengine_opts, name: Display}}
     ]
   end
 
